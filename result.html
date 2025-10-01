@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Results</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-sun" id="theme-icon"></i>
+    </div>
+
+    <div class="container results-container">
+        <!-- Results Header -->
+        <div class="results-header">
+            <div class="results-icon" id="results-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <h1 id="results-title">Quiz Completed!</h1>
+            <p id="results-subtitle">Here's how you performed</p>
+        </div>
+
+        <!-- Score Display -->
+        <div class="score-display">
+            <div class="main-score">
+                <h2 id="final-score">0</h2>
+                <p>Final Score</p>
+            </div>
+            <div class="score-details">
+                <div class="score-item correct">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3 id="correct-count">0</h3>
+                        <p>Correct</p>
+                    </div>
+                </div>
+                <div class="score-item wrong">
+                    <i class="fas fa-times-circle"></i>
+                    <div>
+                        <h3 id="wrong-count">0</h3>
+                        <p>Wrong</p>
+                    </div>
+                </div>
+                <div class="score-item percentage">
+                    <i class="fas fa-percent"></i>
+                    <div>
+                        <h3 id="percentage">0%</h3>
+                        <p>Accuracy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Stats -->
+        <div class="performance-stats">
+            <div class="stat-card streak">
+                <div class="stat-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="quiz-streak-count">0</h3>
+                    <p>Current Streak</p>
+                    <span class="stat-change" id="streak-change"></span>
+                </div>
+            </div>
+            
+            <div class="stat-card best-streak">
+                <div class="stat-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="best-streak-count">0</h3>
+                    <p>Best Streak</p>
+                    <span class="stat-change" id="best-streak-change"></span>
+                </div>
+            </div>
+
+            <div class="stat-card category-best">
+                <div class="stat-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="category-best-score">0</h3>
+                    <p>Category Best</p>
+                    <span class="stat-change" id="category-best-change"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Message -->
+        <div class="performance-message" id="performance-message">
+            <div class="message-content">
+                <h3 id="message-title">Good Job!</h3>
+                <p id="message-text">Keep practicing to improve your score!</p>
+            </div>
+        </div>
+
+        <!-- Quiz Summary -->
+        <div class="quiz-summary">
+            <h3>Quiz Summary</h3>
+            <div class="summary-stats">
+                <div class="summary-item">
+                    <span class="label">Category:</span>
+                    <span class="value" id="quiz-category">General</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Questions:</span>
+                    <span class="value" id="total-questions-taken">20</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Time Taken:</span>
+                    <span class="value" id="time-taken">5:30</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Average Time per Question:</span>
+                    <span class="value" id="avg-time">16.5s</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="results-actions">
+            <button class="btn btn-primary" id="retry-btn">
+                <i class="fas fa-redo"></i> Retry Quiz
+            </button>
+            <button class="btn btn-secondary" id="dashboard-btn">
+                <i class="fas fa-home"></i> Dashboard
+            </button>
+            <button class="btn btn-outline" id="share-btn">
+                <i class="fas fa-share"></i> Share Score
+            </button>
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements" id="achievements" style="display: none;">
+            <h3>🎉 New Achievements!</h3>
+            <div class="achievement-list" id="achievement-list">
+                <!-- Achievements will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize results when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user is logged in
+            const currentUser = localStorage.getItem('currentUser');
+            if (!currentUser) {
+                window.location.href = 'index.html';
+                return;
+            }
+            
+            // Get quiz results from localStorage
+            const quizResults = JSON.parse(localStorage.getItem('currentQuizResults'));
+            if (!quizResults) {
+                window.location.href = 'index.html';
+                return;
+            }
+            
+            displayResults(quizResults);
+        });
+    </script>
+</body>
+</html>

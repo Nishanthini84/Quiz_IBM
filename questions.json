@@ -1,0 +1,492 @@
+{
+  "categories": {
+    "communication": [
+      {
+        "question": "What is the most important element of effective communication?",
+        "correct_answer": "Active listening",
+        "incorrect_answers": ["Speaking loudly", "Using complex words", "Talking fast"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which communication style is most effective in professional settings?",
+        "correct_answer": "Assertive",
+        "incorrect_answers": ["Aggressive", "Passive", "Passive-aggressive"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What percentage of communication is non-verbal according to Albert Mehrabian?",
+        "correct_answer": "55%",
+        "incorrect_answers": ["25%", "75%", "85%"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "What is the primary purpose of feedback in communication?",
+        "correct_answer": "To ensure understanding",
+        "incorrect_answers": ["To criticize", "To dominate", "To confuse"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which is NOT a barrier to effective communication?",
+        "correct_answer": "Empathy",
+        "incorrect_answers": ["Noise", "Language differences", "Preconceptions"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What does 'CC' stand for in email communication?",
+        "correct_answer": "Carbon Copy",
+        "incorrect_answers": ["Courtesy Copy", "Complete Copy", "Confidential Copy"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which communication channel is best for complex information?",
+        "correct_answer": "Face-to-face",
+        "incorrect_answers": ["Email", "Text message", "Phone call"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is active listening?",
+        "correct_answer": "Fully concentrating on the speaker",
+        "incorrect_answers": ["Waiting to respond", "Thinking of counterarguments", "Planning your next words"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which gesture typically indicates openness in body language?",
+        "correct_answer": "Open palms",
+        "incorrect_answers": ["Crossed arms", "Clenched fists", "Pointing finger"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is the 7-38-55 rule in communication?",
+        "correct_answer": "Words-Tone-Body language impact",
+        "incorrect_answers": ["Time-Place-Message rule", "Sender-Medium-Receiver rule", "Past-Present-Future rule"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "What is empathy in communication?",
+        "correct_answer": "Understanding others' feelings",
+        "incorrect_answers": ["Agreeing with everyone", "Being sympathetic", "Showing pity"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which is an example of verbal communication?",
+        "correct_answer": "Speaking on phone",
+        "incorrect_answers": ["Nodding head", "Hand gestures", "Facial expressions"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is paralanguage?",
+        "correct_answer": "Vocal qualities like tone and pitch",
+        "incorrect_answers": ["Body language", "Written words", "Sign language"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "Which communication model includes feedback?",
+        "correct_answer": "Interactive model",
+        "incorrect_answers": ["Linear model", "One-way model", "Static model"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is noise in communication?",
+        "correct_answer": "Any interference in the message",
+        "incorrect_answers": ["Only audio disturbance", "Loud sounds", "Background music"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which is a formal communication channel?",
+        "correct_answer": "Official meetings",
+        "incorrect_answers": ["Gossip", "Casual chat", "Rumors"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the purpose of paraphrasing?",
+        "correct_answer": "To confirm understanding",
+        "incorrect_answers": ["To criticize", "To change meaning", "To confuse"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which is an example of non-verbal communication?",
+        "correct_answer": "Eye contact",
+        "incorrect_answers": ["Email", "Phone call", "Letter"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is proxemics?",
+        "correct_answer": "Study of personal space",
+        "incorrect_answers": ["Study of voice", "Study of words", "Study of time"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "Which listening style focuses on facts and details?",
+        "correct_answer": "Analytical listening",
+        "incorrect_answers": ["Empathetic listening", "Critical listening", "Appreciative listening"],
+        "difficulty": "medium"
+      }
+    ],
+    "aptitude": [
+      {
+        "question": "If 5 machines can produce 5 widgets in 5 minutes, how many machines are needed to produce 100 widgets in 100 minutes?",
+        "correct_answer": "5",
+        "incorrect_answers": ["20", "100", "10"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What comes next in the sequence: 2, 6, 12, 20, 30, ?",
+        "correct_answer": "42",
+        "incorrect_answers": ["40", "38", "44"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "If all Bloops are Razzles and all Razzles are Lazzles, then all Bloops are definitely Lazzles?",
+        "correct_answer": "True",
+        "incorrect_answers": ["False", "Cannot be determined", "Sometimes"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "A train travels 60 mph for 2 hours, then 80 mph for 3 hours. What is its average speed?",
+        "correct_answer": "72 mph",
+        "incorrect_answers": ["70 mph", "75 mph", "68 mph"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "Which number should replace the question mark: 3, 7, 15, 31, ?",
+        "correct_answer": "63",
+        "incorrect_answers": ["47", "55", "71"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "If you rearrange the letters 'LISTEN', you get which word?",
+        "correct_answer": "SILENT",
+        "incorrect_answers": ["TENSIL", "ENLIST", "TINSEL"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is 15% of 200?",
+        "correct_answer": "30",
+        "incorrect_answers": ["25", "35", "40"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "If a clock shows 3:15, what is the angle between the hour and minute hands?",
+        "correct_answer": "7.5 degrees",
+        "incorrect_answers": ["15 degrees", "22.5 degrees", "0 degrees"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "Complete the analogy: Book is to Reading as Fork is to ?",
+        "correct_answer": "Eating",
+        "incorrect_answers": ["Kitchen", "Spoon", "Food"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "If 3x + 7 = 22, what is x?",
+        "correct_answer": "5",
+        "incorrect_answers": ["4", "6", "7"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is the next number in the series: 1, 4, 9, 16, 25, ?",
+        "correct_answer": "36",
+        "incorrect_answers": ["30", "35", "49"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "If John is 3 times as old as Mary, and their combined age is 40, how old is John?",
+        "correct_answer": "30",
+        "incorrect_answers": ["25", "35", "20"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Complete the pattern: O, T, T, F, F, S, S, E, ?",
+        "correct_answer": "N",
+        "incorrect_answers": ["I", "T", "F"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "If it takes 8 workers 10 days to build a wall, how many days will it take 4 workers?",
+        "correct_answer": "20",
+        "incorrect_answers": ["5", "15", "40"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is the missing number: 7, 14, 28, ?, 112",
+        "correct_answer": "56",
+        "incorrect_answers": ["42", "70", "84"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "If A = 1, B = 2, C = 3, what is the value of QUIZ?",
+        "correct_answer": "64",
+        "incorrect_answers": ["58", "70", "52"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What comes next: 1, 1, 2, 3, 5, 8, ?",
+        "correct_answer": "13",
+        "incorrect_answers": ["11", "12", "15"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "If 2 + 3 = 10, 6 + 5 = 66, then 8 + 7 = ?",
+        "correct_answer": "106",
+        "incorrect_answers": ["15", "56", "120"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "Complete: Monday is to Tuesday as January is to ?",
+        "correct_answer": "February",
+        "incorrect_answers": ["December", "March", "June"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "If the day before yesterday was Thursday, what day is tomorrow?",
+        "correct_answer": "Sunday",
+        "incorrect_answers": ["Monday", "Saturday", "Friday"],
+        "difficulty": "medium"
+      }
+    ],
+    "coding": [
+      {
+        "question": "Which programming language is known as the 'mother of all languages'?",
+        "correct_answer": "C",
+        "incorrect_answers": ["Java", "Python", "Assembly"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What does HTML stand for?",
+        "correct_answer": "HyperText Markup Language",
+        "incorrect_answers": ["Home Tool Markup Language", "Hyperlinks and Text Markup Language", "HyperText Modern Language"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which data structure follows LIFO (Last In First Out) principle?",
+        "correct_answer": "Stack",
+        "incorrect_answers": ["Queue", "Array", "Linked List"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is the time complexity of binary search?",
+        "correct_answer": "O(log n)",
+        "incorrect_answers": ["O(n)", "O(n²)", "O(1)"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which sorting algorithm has the best average-case time complexity?",
+        "correct_answer": "Quick Sort",
+        "incorrect_answers": ["Bubble Sort", "Selection Sort", "Insertion Sort"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "What does CSS stand for?",
+        "correct_answer": "Cascading Style Sheets",
+        "incorrect_answers": ["Computer Style Sheets", "Creative Style Sheets", "Colorful Style Sheets"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which HTTP status code indicates 'Not Found'?",
+        "correct_answer": "404",
+        "incorrect_answers": ["200", "500", "301"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is polymorphism in OOP?",
+        "correct_answer": "Objects taking multiple forms",
+        "incorrect_answers": ["Data hiding", "Code reusability", "Object creation"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which database operation is used to retrieve data?",
+        "correct_answer": "SELECT",
+        "incorrect_answers": ["INSERT", "UPDATE", "DELETE"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the purpose of a constructor in OOP?",
+        "correct_answer": "Initialize objects",
+        "incorrect_answers": ["Destroy objects", "Inherit properties", "Define methods"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which programming paradigm does Python primarily support?",
+        "correct_answer": "Multi-paradigm",
+        "incorrect_answers": ["Only OOP", "Only Functional", "Only Procedural"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What does API stand for?",
+        "correct_answer": "Application Programming Interface",
+        "incorrect_answers": ["Advanced Programming Interface", "Application Process Interface", "Automated Programming Interface"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which data structure follows FIFO principle?",
+        "correct_answer": "Queue",
+        "incorrect_answers": ["Stack", "Tree", "Graph"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is recursion in programming?",
+        "correct_answer": "Function calling itself",
+        "incorrect_answers": ["Loop iteration", "Variable declaration", "Error handling"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which is NOT a primitive data type in most languages?",
+        "correct_answer": "Array",
+        "incorrect_answers": ["Integer", "Boolean", "Character"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What does SQL stand for?",
+        "correct_answer": "Structured Query Language",
+        "incorrect_answers": ["Simple Query Language", "Standard Query Language", "System Query Language"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which algorithm is used for finding shortest path?",
+        "correct_answer": "Dijkstra's algorithm",
+        "incorrect_answers": ["Bubble sort", "Binary search", "Quick sort"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "What is encapsulation in OOP?",
+        "correct_answer": "Data hiding and bundling",
+        "incorrect_answers": ["Code reusability", "Multiple inheritance", "Dynamic binding"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which HTTP method is used to send data to server?",
+        "correct_answer": "POST",
+        "incorrect_answers": ["GET", "DELETE", "PUT"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is Big O notation used for?",
+        "correct_answer": "Algorithm complexity analysis",
+        "incorrect_answers": ["Database design", "UI development", "Network protocols"],
+        "difficulty": "medium"
+      }
+    ],
+    "general": [
+      {
+        "question": "What is the capital of Australia?",
+        "correct_answer": "Canberra",
+        "incorrect_answers": ["Sydney", "Melbourne", "Perth"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Who painted the Mona Lisa?",
+        "correct_answer": "Leonardo da Vinci",
+        "incorrect_answers": ["Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the largest planet in our solar system?",
+        "correct_answer": "Jupiter",
+        "incorrect_answers": ["Saturn", "Neptune", "Earth"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "In which year did World War II end?",
+        "correct_answer": "1945",
+        "incorrect_answers": ["1944", "1946", "1943"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "correct_answer": "Au",
+        "incorrect_answers": ["Go", "Gd", "Ag"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which ocean is the largest?",
+        "correct_answer": "Pacific Ocean",
+        "incorrect_answers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "correct_answer": "William Shakespeare",
+        "incorrect_answers": ["Charles Dickens", "Jane Austen", "Mark Twain"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the speed of light?",
+        "correct_answer": "299,792,458 m/s",
+        "incorrect_answers": ["300,000,000 m/s", "186,000 mph", "299,792 km/s"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "Which country has the most time zones?",
+        "correct_answer": "France",
+        "incorrect_answers": ["Russia", "United States", "China"],
+        "difficulty": "hard"
+      },
+      {
+        "question": "What is the smallest country in the world?",
+        "correct_answer": "Vatican City",
+        "incorrect_answers": ["Monaco", "San Marino", "Liechtenstein"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which element has the symbol 'O'?",
+        "correct_answer": "Oxygen",
+        "incorrect_answers": ["Osmium", "Oganesson", "Olivine"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the longest river in the world?",
+        "correct_answer": "Nile River",
+        "incorrect_answers": ["Amazon River", "Mississippi River", "Yangtze River"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "How many continents are there?",
+        "correct_answer": "7",
+        "incorrect_answers": ["5", "6", "8"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the hardest natural substance on Earth?",
+        "correct_answer": "Diamond",
+        "incorrect_answers": ["Quartz", "Titanium", "Iron"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "Which planet is known as the Red Planet?",
+        "correct_answer": "Mars",
+        "incorrect_answers": ["Venus", "Jupiter", "Mercury"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the currency of Japan?",
+        "correct_answer": "Yen",
+        "incorrect_answers": ["Won", "Yuan", "Ringgit"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Who invented the telephone?",
+        "correct_answer": "Alexander Graham Bell",
+        "incorrect_answers": ["Thomas Edison", "Nikola Tesla", "Benjamin Franklin"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is the tallest mountain in the world?",
+        "correct_answer": "Mount Everest",
+        "incorrect_answers": ["K2", "Kangchenjunga", "Makalu"],
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which gas makes up about 78% of Earth's atmosphere?",
+        "correct_answer": "Nitrogen",
+        "incorrect_answers": ["Oxygen", "Carbon Dioxide", "Argon"],
+        "difficulty": "medium"
+      },
+      {
+        "question": "In which year did the Berlin Wall fall?",
+        "correct_answer": "1989",
+        "incorrect_answers": ["1987", "1991", "1985"],
+        "difficulty": "medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Login & Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-sun" id="theme-icon"></i>
+    </div>
+
+    <!-- Login Form -->
+    <div class="container" id="login-container">
+        <div class="form-card enhanced-card">
+            <div class="logo-section">
+                <div class="logo-icon-wrapper">
+                    <i class="fas fa-brain logo-icon"></i>
+                </div>
+                <h1 class="app-title">Quiz Master</h1>
+                <p class="app-subtitle">Test Your Knowledge, Challenge Your Mind</p>
+            </div>
+            
+            <div class="welcome-section">
+                <h2 class="form-title">Welcome Back!</h2>
+                <p class="form-subtitle">Sign in to continue your learning journey</p>
+            </div>
+            
+            <form id="login-form" class="enhanced-form">
+                <div class="input-group enhanced-input">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                    <div class="input-underline"></div>
+                </div>
+                <div class="input-group enhanced-input">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                    <div class="input-underline"></div>
+                </div>
+                <button type="submit" class="btn btn-primary enhanced-btn">
+                    <span class="btn-content">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login to Dashboard</span>
+                    </span>
+                    <div class="btn-shimmer"></div>
+                </button>
+            </form>
+            
+            <div class="form-footer">
+                <p class="switch-form">
+                    New to Quiz Master? 
+                    <a href="#" id="show-signup" class="form-link">Create Account</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="container" id="signup-container" style="display: none;">
+        <div class="form-card enhanced-card">
+            <div class="logo-section">
+                <div class="logo-icon-wrapper">
+                    <i class="fas fa-brain logo-icon"></i>
+                </div>
+                <h1 class="app-title">Quiz Master</h1>
+                <p class="app-subtitle">Test Your Knowledge, Challenge Your Mind</p>
+            </div>
+            
+            <div class="welcome-section">
+                <h2 class="form-title">Join Quiz Master</h2>
+                <p class="form-subtitle">Create your account and start your quiz adventure</p>
+            </div>
+            
+            <form id="signup-form" class="enhanced-form">
+                <div class="input-group enhanced-input">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                    <div class="input-underline"></div>
+                </div>
+                <div class="input-group enhanced-input">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" id="signup-email" placeholder="Enter your email address" required>
+                    <div class="input-underline"></div>
+                </div>
+                <div class="input-group enhanced-input">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" id="signup-password" placeholder="Create a strong password" required minlength="6">
+                    <div class="input-underline"></div>
+                </div>
+                <button type="submit" class="btn btn-primary enhanced-btn">
+                    <span class="btn-content">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Create Account</span>
+                    </span>
+                    <div class="btn-shimmer"></div>
+                </button>
+            </form>
+            
+            <div class="form-footer">
+                <p class="switch-form">
+                    Already have an account? 
+                    <a href="#" id="show-login" class="form-link">Sign In</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="container" id="dashboard-container" style="display: none;">
+        <header class="dashboard-header">
+            <div class="user-info">
+                <h1>Welcome back, <span id="user-name"></span>!</h1>
+                <button class="btn btn-secondary" id="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </header>
+
+        <!-- User Stats -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-trophy"></i>
+                <div>
+                    <h3 id="highest-score">0</h3>
+                    <p>Highest Score</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                    <h3 id="last-score">0</h3>
+                    <p>Last Score</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-fire"></i>
+                <div>
+                    <h3 id="current-streak">0</h3>
+                    <p>Current Streak</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-gamepad"></i>
+                <div>
+                    <h3 id="total-quizzes">0</h3>
+                    <p>Quizzes Taken</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Categories -->
+        <div class="categories-section">
+            <h2>Choose Your Challenge</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="communication">
+                    <div class="category-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Communication</h3>
+                    <p>Test your communication skills and knowledge</p>
+                    <div class="category-stats">
+                        <span class="best-score">Best: <span id="comm-best">0</span></span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="aptitude">
+                    <div class="category-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Aptitude</h3>
+                    <p>Logical reasoning and mathematical problems</p>
+                    <div class="category-stats">
+                        <span class="best-score">Best: <span id="apt-best">0</span></span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="coding">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Coding</h3>
+                    <p>Programming concepts and algorithms</p>
+                    <div class="category-stats">
+                        <span class="best-score">Best: <span id="code-best">0</span></span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="general">
+                    <div class="category-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>General Knowledge</h3>
+                    <p>History, geography, science, and more</p>
+                    <div class="category-stats">
+                        <span class="best-score">Best: <span id="gen-best">0</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Score History -->
+        <div class="history-section">
+            <h3>Recent Quiz History</h3>
+            <div class="history-container" id="quiz-history">
+                <p class="no-history">No quiz history yet. Start your first quiz!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div class="notification-container" id="notification-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

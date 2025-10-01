@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-sun" id="theme-icon"></i>
+    </div>
+
+    <div class="container quiz-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+            <div class="quiz-info">
+                <h2 id="category-title">Quiz</h2>
+                <div class="quiz-progress">
+                    <span id="question-number">1</span> of <span id="total-questions">20</span>
+                </div>
+            </div>
+            <div class="quiz-stats">
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>Score: <span id="current-score">0</span></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-fire"></i>
+                    <span>Streak: <span id="quiz-streak">0</span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <!-- Timer -->
+        <div class="timer-container">
+            <div class="timer" id="timer">
+                <i class="fas fa-clock"></i>
+                <span id="time-left">30</span>s
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card" id="question-card">
+            <div class="question-content">
+                <h3 id="question-text">Loading question...</h3>
+            </div>
+            
+            <div class="answers-container" id="answers-container">
+                <!-- Answer options will be dynamically added here -->
+            </div>
+
+            <div class="question-navigation">
+                <button class="btn btn-secondary" id="prev-btn" disabled>
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <button class="btn btn-primary" id="next-btn" disabled>
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div class="loading-screen" id="loading-screen">
+            <div class="loader">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading questions...</p>
+            </div>
+        </div>
+
+        <!-- Notification Toast -->
+        <div class="notification-container" id="notification-container"></div>
+
+        <!-- Quiz Controls -->
+        <div class="quiz-controls">
+            <button class="btn btn-outline" id="home-btn">
+                <i class="fas fa-home"></i> Dashboard
+            </button>
+            <button class="btn btn-danger" id="quit-btn">
+                <i class="fas fa-times"></i> Quit Quiz
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize quiz when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            
+            if (!category) {
+                window.location.href = 'index.html';
+                return;
+            }
+            
+            // Check if user is logged in
+            const currentUser = localStorage.getItem('currentUser');
+            if (!currentUser) {
+                window.location.href = 'index.html';
+                return;
+            }
+            
+            initializeQuiz(category);
+        });
+    </script>
+</body>
+</html>
